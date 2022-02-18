@@ -9,6 +9,7 @@ const prodConfig = {
   mode: "production",
   output: {
     filename: "[name].[contenthash].js", // files built for production will use this scheme,(caching related)
+    publicPath: "/container/latest/", // this will add the paths to the files, remove and check the error
   },
   plugins: [
     new ModuleFederationPlugin({
